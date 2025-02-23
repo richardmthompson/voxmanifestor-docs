@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Left Sidebar -->
+      <nav class="sidebar">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/about">About The App</a></li>
+          <li><a href="/docs/features">Features</a></li>
+          <li><a href="/docs/user-guide">User Guide</a></li>
+          <li><a href="/docs/technical">Technical</a></li>
+          <li><a href="/docs/support">Support</a></li>
+          <li><a href="/docs/blog">Dev Blog</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <section class="main-content">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>

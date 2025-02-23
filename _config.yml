@@ -2,9 +2,16 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme
 
-title: Vox Manifestor
+title: Vox Manifestor Genie
 description: Voice-driven manifestation assistant
 show_downloads: false
+
+defaults:
+  -
+    scope:
+      path: "" # Apply to all files
+    values:
+      layout: "default" # Use our custom layout
 
 github:
   is_project_page: true
