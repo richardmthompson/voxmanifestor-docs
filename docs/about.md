@@ -54,6 +54,9 @@ Please provide feedback about what features you like, what you'd like to see imp
 
 ## Our Vision
 We believe that the next generation of applications will be redefined by their voice-based intelligent interfaces.
-The best applications will be those that can effectively understand and communicate, and help us by extending our existing cognitive abilities:
-our intelligence, planning and reasoning, and ability to execute the most effective goal-driven behaviours at the right time.
+
+The best applications will be those that can effectively understand and communicate, and help us by extending our existing cognition:
+
+* our intelligence, planning and reasoning,
+* our ability to execute the most effective goal-driven behaviours at the right time.
 
