@@ -3,39 +3,40 @@ layout: default
 title: Features
 ---
 
-# Features
+# Current Features
 
 ## Voice Interface
-```bash
-# Available Commands:
-$ speak "manifest"    // Begin wish creation
+
+### Available Commands:
+$ speak "manifest"    // Begin wish creation 
 $ speak "select"      // Choose existing wish
 $ speak "affirm"      // Start affirmations
 $ speak "define"      // Enter concept mapping
 
-# Wish Management
+## Wish Management
 
 * Store up to 5 active wishes
 * Voice-driven wish creation and editing
 * Natural conversation with AI genie
 * Wish status tracking and updates
 
-# Concept Building
-## Present State Mapping (Current Reality Analysis)
-* Define present situation
-* Identify key challenges
-* Map existing resources
-
-## Desired State Mapping (Future Vision Creation)
-* Articulate desired outcomes
-* Define success markers
-* Establish achievement criteria
-
 ## Affirmation Generator
 * Generate custom affirmations based on your wishes
 * AI-powered personalization
 * AI-Voice-guided affirmation sessions
 * Repetition and timing control
+
+## Concept Building
+
+### Present State Mapping (Current Reality Analysis)
+* Define present situation
+* Identify key challenges
+* Map existing resources
+
+### Desired State Mapping (Future Vision Creation)
+* Articulate desired outcomes
+* Define success markers
+* Establish achievement criteria
 
 ## AI Genie Assistant
 * Natural conversation flow
