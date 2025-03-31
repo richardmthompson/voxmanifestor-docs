@@ -1,66 +1,92 @@
 /* === Vox Manifestor Custom Theme === */
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@600&display=swap');
+
 body {
-  background-color: #fffbea; /* Light background */
-  color: #1a1a1a; /* Deep charcoal text */
+  background-color: #fffbea;
+  color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
 
-/* Fix main layout */
-.main-content {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  border-radius: 12px;
+.wrapper {
+  display: flex;
+  min-height: 100vh;
 }
 
-/* Fix left nav */
-.side-bar {
+/* Sidebar */
+.sidebar {
   width: 220px;
   background-color: #1f1f1f;
   color: #fff;
-  padding-top: 1rem;
+  padding: 1rem;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-.side-bar a {
+.sidebar h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #f0c932;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
   color: #f0c932;
   text-decoration: none;
   font-weight: bold;
 }
 
-.side-bar a:hover {
-  color: #ff6347; /* Funky red-orange */
+.sidebar a:hover {
+  color: #ff6347;
 }
 
-/* Header Styling */
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 h1, h2, h3 {
   font-family: 'Orbitron', sans-serif;
   color: #f0c932;
   margin-top: 2rem;
 }
 
-/* Button-style links */
 a.button, .main-content a[href^="#"] {
   display: inline-block;
-  margin: 1rem 0.5rem 0 0;
+  background-color: #ff6347;
+  color: white;
   padding: 0.5rem 1rem;
-  background: #ff6347;
-  color: white !important;
   border-radius: 6px;
+  margin: 1rem 1rem 0 0;
   text-decoration: none;
   font-weight: bold;
 }
 
 a.button:hover {
-  background: #e5533d;
+  background-color: #e5533d;
 }
 
-/* Code and preformatted blocks */
 code, pre {
   background-color: #f4f4f4;
   padding: 0.2em 0.4em;
@@ -68,14 +94,19 @@ code, pre {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Responsive tweaks */
 @media screen and (max-width: 768px) {
-  .side-bar {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
     width: 100%;
-    position: static;
+    height: auto;
+    position: relative;
   }
 
   .main-content {
     margin: 1rem;
+    padding: 1rem;
   }
 }
