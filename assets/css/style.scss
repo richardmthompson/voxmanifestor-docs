@@ -4,9 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@600&display=swap');
 
 body {
-  background-color: #fffbea;
   color: #1a1a1a;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f5f1e6; // soft beige
+  color: #2a2a2a;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +20,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #000000; /* true black */
+  background-color: #242038; // dark purple from logo
   color: #fff;
   padding: 1rem;
   flex-shrink: 0;
@@ -46,8 +47,8 @@ body {
 }
 
 .sidebar a {
-  color: #f0c932;
-  text-decoration: none;
+  color: #ffd166; // logo accent yellow
+    text-decoration: none;
   font-weight: bold;
 }
 
